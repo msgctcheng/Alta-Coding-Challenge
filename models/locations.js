@@ -1,5 +1,5 @@
 const orm = require("../config/orm.js");
-
+//Location model uses orm
 const location = {
     selectAll: function(callback) {
         orm.selectAll("spots", function(res){
