@@ -1,6 +1,6 @@
 const connection = require("../config/connection.js");
 
-
+//handle ? for SQL Query
 function questionMarks(num) {
     var arr = [];
     for (var i = 0; i < num; i++) {
@@ -8,7 +8,7 @@ function questionMarks(num) {
     }
     return arr.toString();
 };
-
+//format SQL query
 function makeSql(ob) {
     let arr = [];
     for (var key in ob) {
@@ -22,6 +22,8 @@ function makeSql(ob) {
     }
     return arr.toString();
 };
+
+// Create ORM that assembles SQL query string.
 const orm = {
     selectAll: function (tableInput, callback) {
         const sqlQuery = "SELECT * FROM " + tableInput + ";";
@@ -37,15 +39,10 @@ const orm = {
             if (error) throw error;
             callback(result);
         })
-    },
-    updateOne: function (table, obj, condition, callback) {
-        const sqlQuery = "UPDATE " + table + " SET " + makeSql(obj) + " WHERE " + condition;
-        console.log(sqlQuery);
-        connection.query(sqlQuery, function (error, result) {
-            if (error) throw error;
-            callback(result);
-        });
     }
+    
 };
 
+
+//export orm
 module.exports = orm;

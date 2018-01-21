@@ -1,17 +1,27 @@
 const express = require("express");
 const router = express.Router();
-const burger = require("../models/locations.js");
+const location = require("../models/locations.js");
 
+//set default route to render view
 router.get("/", function (req, res) {
     
     res.render("index");
 });
-
-router.post("/api/burgers", function (req, res) {
-    burger.insertOne(["burger_name", "devoured"], [req.body.name, false], function (result) {
+//create API route for saving single locations
+router.post("/api/locations", function (req, res) {
+    location.insertOne(["street", "home"], [req.body.street, false], function (result) {
         res.json({
             id: result.insertId
         });
+    });
+});
+//Api route for retreiving Saved Destinations   
+router.get("/", function (req, res) {
+    location.selectAll(function (data) {
+        var object = {
+            spots: data
+        };
+        console.log(object);
     });
 });
 

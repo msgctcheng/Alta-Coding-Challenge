@@ -10,11 +10,6 @@ const location = {
         orm.insertOne("spots", columns, values, function (res){
             callback(res);
         });
-    },
-    updateOne: function (obj, condition, callback) {
-        orm.updateOne("spots", obj, condition, function(res) {
-            callback(res);
-        });
     }
 };
 module.exports = location;
