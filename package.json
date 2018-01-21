@@ -1,0 +1,20 @@
+{
+  "name": "alta-coding-challenge",
+  "version": "1.0.0",
+  "description": "Alta Coding Challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msgctcheng/Alta-Coding-Challenge.git"
+  },
+  "author": "Christopher Cheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msgctcheng/Alta-Coding-Challenge/issues"
+  },
+  "homepage": "https://github.com/msgctcheng/Alta-Coding-Challenge#readme"
+}
