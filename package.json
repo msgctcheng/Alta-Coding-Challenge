@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/msgctcheng/Alta-Coding-Challenge/issues"
   },
-  "homepage": "https://github.com/msgctcheng/Alta-Coding-Challenge#readme"
+  "homepage": "https://github.com/msgctcheng/Alta-Coding-Challenge#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consolidate": "^0.15.0",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0",
+    "swig": "^1.4.2"
+  }
 }

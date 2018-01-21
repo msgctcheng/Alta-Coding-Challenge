@@ -1,0 +1,42 @@
+body {
+    background-image: url("../images/laBackground.png");
+}
+.wrapper {
+    width: 75%;
+    margin: auto;
+    height:85%;
+    
+    position: relative;
+    top: 10vh;
+}
+.tablink {
+    background-color: #666666;
+    color: white;
+    float: left;
+    border: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+    margin: auto;
+}
+
+.tablink:hover {
+    background-color: #777777;
+}
+
+.tabcontent {
+    padding: 50px;
+    color: white;
+    text-align: center;
+  
+}
+#map {
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    
+}
