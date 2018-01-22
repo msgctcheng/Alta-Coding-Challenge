@@ -24,7 +24,7 @@ function openTab(tabName, tabCont, elmnt, color) {
     elmnt.style.backgroundColor = color;
     document.getElementById(tabName).style.backgroundColor = color;
     document.getElementById(tabCont).style.backgroundColor = color;
-    
+    doument.getElementsByClassName("topBar").style.backgroundColor = "#82233";
 }
 
 

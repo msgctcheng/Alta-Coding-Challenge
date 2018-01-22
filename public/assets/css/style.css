@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/laBackground.png");
+    background-size: auto;
 }
 .wrapper {
     width: 75%;
@@ -39,4 +40,8 @@ body {
     width: 90%;
     margin: auto;
     
+}
+.topbar {
+    width:100%;
+    background: #B82233;
 }

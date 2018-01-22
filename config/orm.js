@@ -8,7 +8,7 @@ function questionMarks(num) {
     }
     return arr.toString();
 };
-//format SQL query
+//format to string
 function makeSql(ob) {
     let arr = [];
     for (var key in ob) {
